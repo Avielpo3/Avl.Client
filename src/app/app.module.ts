@@ -18,7 +18,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    AuthenticationModule
+    AuthenticationModule,
   ],
   providers: [ TokenManagerService, {
     provide: HTTP_INTERCEPTORS,
