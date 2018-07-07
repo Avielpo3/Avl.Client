@@ -9,6 +9,8 @@ import { AuthenticationModule } from './authentication/auth.module';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     AppRoutingModule,
     AuthenticationModule,
   ],
-  providers: [ TokenManagerService, {
+  providers: [TokenManagerService, {
     provide: HTTP_INTERCEPTORS,
     useClass: AuthInterceptor,
     multi: true

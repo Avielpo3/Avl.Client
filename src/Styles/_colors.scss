@@ -1,0 +1,6 @@
+@import '~@angular/material/theming';
+@import './_themes';
+
+
+$avl-light-blue: mat-color($candy-app-primary);
+$avl-light-blue-400: mat-color($candy-app-primary, A400);

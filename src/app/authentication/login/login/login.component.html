@@ -1,57 +1,36 @@
 <div class="login-container">
 
   <div class="header-img">
-    <h3>Login</h3>
+    <span class="header-text">Login</span>
   </div>
 
   <div class="login-inner">
-    <form #loginForm="ngForm"
-          class="login-form"
-          (ngSubmit)="onSubmit(loginForm)">
+    <form #loginForm="ngForm" class="login-form" (ngSubmit)="onSubmit(loginForm)">
 
-      <mat-form-field [hideRequiredMarker]="false"
-                      class="full-width">
-        <input matInput
-               type="text"
-               name="username"
-               id="username"
-               placeholder="First Name"
-               #username="ngModel"
-               required
-               ngModel>
+      <mat-form-field [hideRequiredMarker]="false" class="full-width">
+        <input matInput type="text" name="username" id="username" placeholder="Username" #username="ngModel" required ngModel>
+        <mat-icon matSuffix>alternate_email</mat-icon>
         <mat-error *ngIf="username.touched && !username.valid">Please Enter Username</mat-error>
       </mat-form-field>
 
-      <mat-form-field [hideRequiredMarker]="false"
-                      class="full-width">
-        <input matInput
-               type="password"
-               name="password"
-               id="password"
-               class="form-control"
-               placeholder="Password"
-               #password="ngModel"
-               required
-               ngModel>
+      <mat-form-field [hideRequiredMarker]="false" class="full-width">
+        <input matInput type="password" name="password" id="password" class="form-control" placeholder="Password" #password="ngModel"
+          required ngModel>
+        <mat-icon matSuffix>lock_open</mat-icon>
         <mat-error *ngIf="username.touched && !username.valid">Please Enter password</mat-error>
       </mat-form-field>
 
-      <button mat-raised-button
-              color="primary"
-              class="full-width"
-              type="submit"
-              id="submitLoginBtn"
-              [disabled]="!(loginForm.valid)">Submit</button>
+      <mat-checkbox color="primary" >Remember me</mat-checkbox>
+
+      <button mat-raised-button color="primary"  class="full-width btn-submit" type="submit" id="submitLoginBtn" [disabled]="!(loginForm.valid)">Submit</button>
     </form>
   </div>
 
-  <div class="alert alert-success"
-       *ngIf="_isSuccess">
+  <div class="alert alert-success" *ngIf="_isSuccess">
     <strong>{{successMessage}} </strong>
   </div>
 
-  <div class="alert alert-danger"
-       *ngIf="_isErrorRaised">
+  <div class="alert alert-danger" *ngIf="_isErrorRaised">
     <strong>{{errorMessage}}</strong>
   </div>
 

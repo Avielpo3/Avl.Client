@@ -1,0 +1,40 @@
+
+@import '../../../../Styles/_colors';
+
+.login-container {
+  max-width: 30rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.header-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
+
+.btn-submit{
+  margin-top: 1.5rem !important;
+}
+
+.full-width {
+  width: 100%;
+  margin-top: 0.3em;
+}
+
+.login-inner{
+  padding: 1em;
+  border: 2px solid $avl-light-blue-400;
+  background: whitesmoke;
+  padding: 1em;
+}
+
+.header-img {
+  text-align: center;
+  color: white;
+  background: $avl-light-blue;
+  padding-top: 0.5rem;
+  padding-bottom: 0.7rem;
+  border-radius: 10px 10px 0px 0px; 
+  padding-top: 0.5rem;
+  padding-bottom: 0.7rem;
+}
