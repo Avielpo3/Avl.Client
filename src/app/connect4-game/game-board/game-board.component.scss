@@ -1,0 +1,43 @@
+:host {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.board-container {
+    display: flex;
+    min-width: 50%;
+    min-height: 70%;
+    .row-board {
+        flex: 1 0;
+        display: flex;
+        flex-flow: column nowrap;
+        .col-board {
+            flex: 1 0;
+            border:1px solid black;
+            padding: 0.3rem;
+            cursor: pointer;
+            display: block;
+        }
+        .cell{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.red{
+    background: red;
+}
+
+.blue{
+    background: blue;
+}

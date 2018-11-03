@@ -1,0 +1,46 @@
+@import '../../Styles/_colors';
+.side-nav {
+    height: 100%;
+    background: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: white;
+}
+
+.side-nav-img {
+    border-radius: 50%;
+    width: 50%;
+    margin-top: 0.5rem;
+}
+
+.developer {
+    font-size: 1.5rem;
+    color: white;
+    font-family: cursive;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 20px;
+    li {
+        padding: 1rem;
+        border-top: 0.1px solid $avl-light-blue;
+        cursor: pointer;
+        a {
+            color: white;
+            text-decoration: none;
+            &.router-link-active {
+                color: red;
+            }
+        }
+    }
+    li:last-child {
+        border-bottom: 0.1px solid $avl-light-blue;
+    }
+}

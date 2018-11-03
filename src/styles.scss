@@ -1,9 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+$mont: 'Montserrat',
+sans-serif;
+html {
+    height: 100%;
+}
 
-$mont : 'Montserrat', sans-serif;
+body,
+app-root {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    display: flex;
+    box-sizing: border-box;
+}
 
-body{
-  background: #DDD;
+.section {
+    height: 100%;
+    display: flex;
+    &.left {
+        flex-direction: column;
+        flex: 1 0;
+    }
+    &.right {
+        flex-direction: row;
+        flex: 7 0;
+    }
+}
+
+app-sidenav {
+    height: 100%;
 }

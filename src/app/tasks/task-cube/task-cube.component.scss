@@ -1,0 +1,10 @@
+@import '../../../Styles/_colors'; 
+
+.task-cube-container {
+    border: 1px solid $avl-light-blue;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 20rem;
+    height: 10rem;
+}

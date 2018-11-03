@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>Welcome to Connect 4</h1>
+  <br>
+
+
+  <div class="board-container">
+    <div class="row-board"
+         *ngFor="let row of board; let i = index;">
+      <div class="col-board"
+           *ngFor="let col of row"
+           (click)="addCoin(i)">
+        <div class="cell"
+             [class.red]="col === 1"
+             [class.blue]="col === 2 ">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="message"
+      *ngIf="message"> {{message}} </h2>
+
+</div>

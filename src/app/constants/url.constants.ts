@@ -1,7 +1,46 @@
 export class Constants {
 
+
     // Host Adresses:
-    private static readonly BaseUrl: string = 'http://localhost:17118/api/';
+    private static readonly BaseUrl: string = 'http://localhost:50475/api/';
+
+
+    // Controller Names:
+    private static readonly TaskController: string = 'TaskController/';
+
+    private static readonly Tasks: string = 'Tasks';
+
+    public static readonly GetTasks: string = Constants.BaseUrl + Constants.TaskController + Constants.Tasks;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     // Controller Names:
     private static readonly SideServiceController: string = 'SideService/';

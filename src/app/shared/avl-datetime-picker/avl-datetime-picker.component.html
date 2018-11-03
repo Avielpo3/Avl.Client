@@ -1,0 +1,24 @@
+<div class="date-hour-picker">
+  <mat-form-field class="date-picker">
+    <input matInput
+           [matDatepicker]="picker"
+           placeholder="Choose a start date">
+    <mat-datepicker-toggle matSuffix
+                           [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <select name="hourSelect"
+          class="time-select"
+          (change)="onHourSelect($event.target.value)"
+          id="hourSelect">
+    <option *ngFor="let hour of hours"> {{hour.timeDisplay}} </option>
+  </select>
+
+  <select name="minuteSelect"
+          class="time-select"
+          (change)="onMinuteSelect($event.target.value)"
+          id="minuteSelect">
+    <option *ngFor="let minute of minutes"> {{minute.timeDisplay}} </option>
+  </select>
+</div>

@@ -1,0 +1,17 @@
+<nav id="sideNav"
+     class="side-nav">
+  <img class="side-nav-img"
+       src="../../assets/aviel-side.jpg"
+       alt="no">
+  <p class="developer">Ninnja Developer</p>
+  <ul id="sideNavList"
+      class="side-nav-list">
+    <li class="side-nav-list-item"><a [routerLink]="['/']"
+         routerLinkActive="router-link-active"
+         [routerLinkActiveOptions]="{exact:true}">Home</a> </li>
+    <li class="side-nav-list-item"><a [routerLink]="['/tasks']"
+         routerLinkActive="router-link-active">Tasks</a> </li>
+    <li class="side-nav-list-item"><a [routerLink]="['/tasks', 'add']"
+         routerLinkActive="router-link-active">Add Task</a> </li>
+  </ul>
+</nav>
